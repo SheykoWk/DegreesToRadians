@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import ContainerConverter from './components/ContainerConverter';
 import './App.css';
-
+import trigonometria from './img/trigonometria.svg';
+import wave from './img/wave.png';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className='img-wave' src={wave} alt=''/>
+      <div className='container'>
+        <div className='img'>
+          <img src={trigonometria}  alt=''/>  
+        </div>
+        <ContainerConverter/>
+      </div>
     </div>
   );
 }
